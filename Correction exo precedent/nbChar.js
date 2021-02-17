@@ -12,5 +12,5 @@ J'ai rêvé dans la grotte où nage la sirène...\n\
 Et j'ai deux fois vainqueur traversé l'Achéron;\n\
 Modulant tour à tour sur la lyre d'Orphée\n\
 Les soupirs de la sainte et les cris de la fée."
-
+console.log(`${txt}\n`)
 console.log(`Ce texte contient ${txt.length} charactères`)
