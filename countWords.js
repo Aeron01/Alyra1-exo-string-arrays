@@ -13,10 +13,16 @@ Et j'ai deux fois vainqueur traversé l'Achéron;\n\
 Modulant tour à tour sur la lyre d'Orphée\n\
 Les soupirs de la sainte et les cris de la fée."
 
+/* Ma solution
 console.log(`${txt}\n\n`)
 
 let countW = 0
 let splttxt = txt.split(" ")
 for (let count = 0; count < splttxt.length; ++count) {
   ++countW
-} console.log(`Ce sonnet contient ${countW} mots.`)
+} console.log(`Ce sonnet contient ${countW} mots.`)*/
+
+// Correction
+txt = txt.replaceAll('\n', ' ')
+let tab = txt.split(' ')
+console.log(`Le nombre de mot est ${tab.length}.`)
