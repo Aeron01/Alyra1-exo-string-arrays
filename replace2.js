@@ -9,7 +9,7 @@ let replname = 'Christian'
 let indx = txt.indexOf(name)
 console.log(`${txt}\n`)
 if (indx > -1) {
-  // si le nom est présent, procéder au remplacement grace a la commande .replaceAll sur toutes les ligne
+  // Si le nom est présent, procéder au remplacement grace a la commande .replaceAll sur toutes les lignes
   let newtxt = txt.replaceAll(name, replname)
   console.log(newtxt)
 } else {
