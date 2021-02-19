@@ -4,12 +4,12 @@ let str = 'YRMV PFL VMVI YRU R UIVRD EVF KYRK PFL NVIV JF JLIV NRJ IVRC NYRK ZW 
 let key = 1 // Max 25 - Min 1 car le code césare a que 26 posibilitée
 let poss1 = 25 // Max 25 - Min 1 car le code césare a que 26 posibilitée
 
-if ((key > 0 && key < 26) && (poss1 > 0 && poss1 < 26)) { // Vérifie que les varriables key et poss1 ne dépasse pas le valeur min et/ou max 
+if ((key > 0 && key < 26) && (poss1 > 0 && poss1 < 26)) { // Vérifie que les donnés key et poss1 ne dépasse pas le valeur min et/ou max 
   for (let psblty = key; psblty <= poss1; psblty++) { // Incrémentation de décalage qui est programable 
 
     let decipher = ''; // Création d'une nouvelle string nomer decipher
     for (let i = 0; i < str.length; i++) { // Début de la bloucle de décodage par incrémentation sur la longeur de la string
-      let tascii  // Création de la variable tascii
+      let tascii  // Création de la donnée tascii
       if (str[i] !== ' ') { // !== ' ' veut dire si pas egale a un espace c'est un caractères
         tascii = str.charCodeAt(i) + psblty // Transcription du caractères en ascii et incrémente de 1  
         if (tascii > 90) // Si le caractère+incrément l'ascii dépasse 90
@@ -23,8 +23,8 @@ if ((key > 0 && key < 26) && (poss1 > 0 && poss1 < 26)) { // Vérifie que les va
     }
     console.log(`Décalage de ${psblty}\n${decipher}\n`) // Affiche une string, quelle est le décalage et le message de ce décalage
   }
-} else if ((key < 0 || key > 26) || (poss1 < 0 || poss1 > 26)) { // Si l'une ou les deux varriables dépasse l'une des valeur min et/oi max affiche ce message
-  console.log(`Il est impossible de faire le décriptage, car l'une des varriable est supérieur à 25 ou inférieur à 1.`)
+} else if ((key < 0 || key > 26) || (poss1 < 0 || poss1 > 26)) { // Si l'une et/ou les deux donées dépasse l'une des valeur min et/oi max affiche ce message
+  console.log(`Il est impossible de faire le décriptage, car l'une des deux données est supérieur à 25 ou inférieur à 1.`)
 }
 
 /* Merci à notre collègue Jonhatan Tondelier, pour sa solution qu'il a partager dans Discord,
